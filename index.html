@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    var i = 0;
+    var txt = 'I Love You!';
+    var speed = 100;
+    function type1() {
+    if(i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(type1, speed);
+    }
+}</script>
+<body>
+    <audio controls autoplay loop>
+        <img src="1.jpg" alt="">
+        <source src="./music/Happy Birthday To You - KTM.mp3">
+    </audio>
+    <div class="birthday">
+        <div class="birthday_inner">
+          <div class="birthday_inner__modal">
+            <div class="modal_image">
+              <img /></div>
+            <div class="modal_content">
+              <h1>Title</h1>
+              <p>Content</p>
+              <button>Nào!Bắt đầu thôi</button>
+            </div>
+          </div>
+          <div class="birthday_inner__stage stage1">
+            <div class="intro_cake">
+              <img class="intro" src="" />
+              <div class="gallery">
+                <span style="--i:1">
+                  <img src="./Img/1.jpg" alt="" />
+                </span>
+                <span style="--i:2">
+                  <img src="./Img/2.jpg" alt="" />
+                </span>
+                <span style="--i:3">
+                  <img src="./Img/3.jpg" alt="" />
+                </span>
+                <span style="--i:4">
+                  <img src="./Img/4.jpg" alt="" />
+                </span>
+                <span style="--i:5">
+                  <img src="./Img/5.jpg" alt="" />
+                </span>
+                <span style="--i:6">
+                  <img src="./Img/6.jpg" alt="" />
+                </span>
+                <span style="--i:7">
+                  <img src="./Img/9.jpg" alt="" />
+                </span>
+                <span style="--i:8">
+                  <img src="./Img/8.jpg" alt="" />
+                </span>
+              </div>
+            </div>
+            <button class="start">Hãy cùng anh làm chiếc bánh nhé</button>
+          </div>
+          <div class="birthday_inner__stage stage2">
+            <h1>Hãy nhào bột cùng nhau nào</h1>
+            <h2>Nào ! Bắt đầu hòa trộn các thành phần lại với nhau nào!!Em hãy nhấn vào nút trộn bên dưới đến khi đều hỗn hợp nhé</h2>
+            <div class="mix">
+              <div class="mix_bowl">
+                <img src ='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/bowl.png'/></div>
+              <div class="mix_spoon">
+                <img src ='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/spoon.png'/></div>
+            </div>
+            <button class="mixer">Nhấn vào đây vài lần để trộn!!</button>
+          </div>
+          <div class="birthday_inner__stage stage3">
+            <h1>Lò Nướng Tình yêu Siêu To Của Quyết
+
+            </h1>
+            <h2>Bây giờ cùng nhau bỏ vào bếp nướng nào !</h2>
+            <div class="oven">
+              <img src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/oven.png'/></div>
+            <div class="tin">
+              <img src ='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tin.png'/></div>
+          </div>
+          <div class="birthday_inner__stage stage4">
+            <h1>Đến lúc làm bánh rồi</h1>
+            <h2>Em hãy chọn màu cho lớp kem phủ của chiếc bánh đi Hồng Điệp </h2>
+            <div class="svg">
+              <svg id="Layer_1 " width="800"><text x="0" y="30" fill= "#FF99CC"; stroke= "#000000";  font-size= "30px";>CHÚC MỪNG SINH NHẬT TÌNH YÊU CỦA ANH 
+               </svg>
+               <p id="demo"></p>
+            </text>
+            </div>
+            <div class="options">
+              <div class="sponges inactive">
+                <h3>Sponges</h3>
+                <h5>
+                  <span>0</span>
+                  / 5
+                </h5>
+                <div class="item">
+                  <div class="item_inner vanilla"></div>
+                  <h4>Vanilla</h4>
+                </div>
+                <div class="item">
+                  <div class="item_inner strawberry"></div>
+                  <h4>Pink</h4>
+                </div>
+                <div class="item">
+                  <div class="item_inner fruit"></div>
+                  <h4>Fruit</h4>
+                </div>
+              </div>
+              <div class="fillings">
+                <h3>Fillings/icing</h3>
+                <h5>
+                  <span>0</span>
+                  / 6
+                </h5>
+                <div class="item">
+                  <div class="item_inner jam"></div>
+                  <h4>Jam</h4>
+                </div>
+                <div class="item">
+                  <div class="item_inner cream"></div>
+                  <h4>Cream</h4>
+                </div>
+                <div class="item">
+                  <div class="item_inner choc"></div>
+                  <h4>Choc</h4>
+                </div>
+                <div class="item">
+                  <div class="item_inner lemon"></div>
+                  <h4>Lemon</h4>
+                </div>
+              </div>
+            </div>
+            <div class="cakemake">
+              <div class="base"></div>
+            </div>
+            <div class="startagain">không sao  </div>
+            <button class="add" onclick="type1()">Rồi đến lúc thổi nến rồi</button>
+            <button class="sa">Start again</button>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="myscript.js"></script>
+</html>
